@@ -11,6 +11,7 @@ plt.style.use("seaborn-muted")
 
 df = pd.read_csv("Optimize.csv").iloc[:, :-1]
 data = df.values
+
 columns = df.columns.tolist()
 def get_lims(l):
     return (np.min(l), np.max(l))
