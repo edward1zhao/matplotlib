@@ -36,7 +36,6 @@ fig = plt.figure(figsize=(20, 10))
 ax = fig.gca(projection='3d')
 ax.xaxis._axinfo['label']['space_factor'] = 10
 
-#surf = ax.plot_trisurf(data[:, 2], data[:, 1], data[:, 0], cmap=cm.jet, linewidth=0.1, antialiased=True, edgecolor="black", shade=True)
 surf = ax.plot_surface(x, y, z, cmap=cm.jet, linewidth=0.2, antialiased=True, edgecolor="black", shade=True)
 
 
