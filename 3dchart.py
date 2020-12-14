@@ -51,8 +51,8 @@ ax.set_zlim(get_lims(data[:, 0]))
 ax.set_xticks(np.arange(np.min(data[:, 2]), np.max(data[:, 2]), 1))
 ax.set_xticklabels(map(lambda x: "{:.0f}".format(x), np.arange(np.min(data[:, 2]), np.max(data[:, 2]), 1)), fontsize=10)
 
-ax.set_yticks(np.arange(0.1, 1, 0.1))
-ax.set_yticklabels(map(lambda x: "{:.2f}".format(x), np.arange(0.1, 1, 0.1)), fontsize=10)
+ax.set_yticks(np.arange(0.1, 1.05, 0.05))
+ax.set_yticklabels(map(lambda x: "{:.2f}".format(x), np.arange(0.1, 1.05, 0.05)), fontsize=8)
 
 ax.set_zticks(np.arange(0, np.max(data[:, 0]), 0.2))
 ax.set_zticklabels(map(lambda x: "{:.1f}".format(x), np.arange(0, np.max(data[:, 0]), 0.2)), fontsize=10)
@@ -61,6 +61,7 @@ ax.view_init(50, -20)
 
 ax.xaxis.labelpad=30
 ax.yaxis.labelpad=30
+
 
 fig.colorbar(surf, ax=ax, shrink=0.5, aspect=5)
 
